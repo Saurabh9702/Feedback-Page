@@ -1,0 +1,121 @@
+@keyframes pop {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.alert{
+    width: 90%;
+    background-color: rgb(14, 162, 14);
+    padding: 10px 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    display: none;
+
+}
+.person-entry,
+.feedback {
+    margin-bottom: 20px;
+}
+
+.person-entry label,
+.feedback label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.person-entry input[type="text"],
+.feedback textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.feedback textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.emojis {
+    display: flex;
+   
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.emojis  {
+    font-size: 30px;
+    align-content: center;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: transform 0.2s;
+}
+
+.emoji:hover{
+animation-name: pop;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: .5s;
+  animation-iteration-count: infinite;
+}
+
+button[type="submit"] {
+    background-color: #335ae6;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+button[type="submit"]:hover {
+    background-color: #159a2d;
+}

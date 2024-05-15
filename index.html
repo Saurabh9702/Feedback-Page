@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback <form action=""></form> Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="header">
+            <form action="" id="feedbackform">
+                <div class="alert">
+                       Thankyou For your Feedback
+                </div>
+            <img src="omo tec.jpg" alt="Company Logo">
+
+            <h1>Thank You for Visiting Us</h1>
+        </div>
+  
+        <div class="person-entry">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+        </div>
+        <div class="person-entry">
+            <label for="name">Your Email:</label>
+            <input type="text" id="email" placeholder="Enter your Email">
+        </div>
+        <div class="emojis">
+            <div  class="emoji" data-rating="2">😟</div>
+            <div  class="emoji" data-rating="3">😐</div>
+            <div  class="emoji" data-rating="4">😊</div>
+            <div  class="emoji" data-rating="5">😍</div>
+            <div  class="emoji" data-rating="1">😡</div>
+        </div>
+        <div class="feedback">
+            <label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" placeholder="Write your feedback here..."></textarea>
+        </div>
+        <button type="submit" id="submitBtn">Submit</button>
+    </div>
+</form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
